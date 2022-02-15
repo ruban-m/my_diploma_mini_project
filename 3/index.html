@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flipkart</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<ul class="thumb">
+		<li><a href="img1.jpg" target="imgBox"><img src="thumb1.jpg"></a></li>
+		<li><a href="img2.jpg" target="imgBox"><img src="thumb2.jpg"></a></li>
+		<li><a href="img3.jpg" target="imgBox"><img src="thumb3.jpg"></a></li>
+                                    <li><a href="img4.jpg" target="imgBox"><img src="thumb4.jpg"></a></li>
+                                    
+	</ul>
+	<div class="imgBox"><img src="img1.jpg"></div>
+<p>
+<h1>Tripr</h1><br>
+<h2>Abstract Men Hooded Neck Dark Blue T-Shirt</h2>
+
+<h1>Special price Rs:359 60% off</h1>
+<h1> 4-stars;21,984 ratings</h1><br>
+<h3>10% Instant Discount on Mastercard on Fashion for First 3 Prepaid Payments</h3><br>
+<h3>5% Unlimited Cashback on Flipkart Axis Bank Credit Card</h3><br>
+<h3>5% Cashback* on HDFC Bank Debit Cards</h3><br>
++2 more offers<br>
+Size
+
+Size Chart
+S
+M
+L
+XL
+XXL
+
+Free shipping<br>
+<a href="#"><img src="buynow.png"></img></a>
+</p>
+</div>
+<script src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.thumb a').mouseover(function(e){
+			e.preventDefault();
+			$('.imgBox img').attr("src", $(this).attr("href"));
+		})
+	})
+</script>
+</body>
+</html>

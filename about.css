@@ -1,0 +1,68 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: consolas;
+}
+ul
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+ul li
+{
+	list-style: none;
+	margin: 0 20px;
+	font-size: 4em;
+}
+ul li a
+{
+	position: relative;
+	color: #eee;
+	text-decoration: none;
+	font-weight: 700;
+}
+ul li a:before
+{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	color: #262626;
+	white-space: nowrap;
+}
+ul:hover li a:before
+{
+	animation: animate2 1s steps(10) forwards;
+}
+ul li:hover a:before
+{
+	animation: animate1 1s steps(10) forwards;
+}
+@keyframes animate1
+{
+	0%
+	{
+		width: 0;
+	}
+	100%
+	{
+		width: 351.88px;
+	}
+}
+@keyframes animate2
+{
+	0%
+	{
+		width: 351.88px;
+	}
+	100%
+	{
+		width: 0;
+	}
+}
